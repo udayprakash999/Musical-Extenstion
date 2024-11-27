@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Knewave&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-body-main-clr);
+    outline-style: none;
+    border:0;
+    outline: 0;
+  }
+  
+:root {
+    --background-body-main-clr:#fbffd6;
+    --primary-color: #000;
+    --secondary-color: #fff;
+  }
+  
+  body {
+    transition: all 0.1s ease-in;
+  }
+  
+  body.dark {
+    --primary-color: #fff;
+    --secondary-color: #333;
+  }
+  
+  body.dark {
+    background-color: #111;
+    color: var(--primary-color);
+  }
+  .toggle {
+    height: 6vh;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 43px;
+ 
+  }
+  
+  .toggle:focus {
+    outline: none;
+  }
+ 
+  .time {
+    font-size: 60px;
+  }
+  
+  .date {
+    /* color: #333; */
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+  .date .circle {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    font-size: 12px;
+  }
+  
+  select, button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+
+  /* music-app-css */
+  /* onebox  */
+.onebox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+
+}
+.onebox> p{
+  font-family: "Knewave", system-ui;
+  font-weight:bold;
+  font-style: normal;
+}
+
+.container {
+    /* height: 100vh;
+    width: 40%; */
+    background-color: #9b59b6; /* Initial color */
+    animation: colorChange 3s infinite alternate; /* Constant color change */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Constant Color Change Animation */
+@keyframes colorChange {
+  0% { background-color: #9b59b6; }  /* Purple */
+  12.5% { background-color: #4588b5; } /* Blue */
+  25% { background-color: #1abc9c; } /* Teal */
+  37.5% { background-color: #2ecc71; } /* Green */
+  50% { background-color: #f1c40f; } /* Yellow */
+  62.5% { background-color: #e67e22; } /* Orange */
+  75% { background-color: #e74c3c; } /* Red */
+  87.5% { background-color: #ad9644; } /* Dark Purple */
+  100% { background-color: #d8ace9; }  /* Purple */
+}
+/* App Content Styling */
+.app {
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+h1 {
+  color: #333;
+   
+}
+
+select, button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #46444458;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+select:hover, button:hover {
+    background-color: #8e44ad;
+    transform: scale(1.05);
+}
+
+/* Volume Control */
+#volume-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#volume-slider {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#volume-percentage {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#player-controls {
+    margin-top: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+#current-track {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Icon Styling */
+button i {
+    margin-right: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    /* .container {
+        width: 80%;
+        height: 60vh;
+    } */
+
+    button, select {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
